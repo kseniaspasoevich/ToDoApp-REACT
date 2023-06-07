@@ -1,0 +1,154 @@
+@use "../Styles/Mixins.scss" as Mixin;
+@use "../Styles/Variables.scss" as variable;
+
+.content-style {
+  @include Mixin.styleContent;
+}
+
+.column {
+  @include Mixin.styleColumn;
+}
+.column-title {
+  @include Mixin.styleColumnTitle;
+}
+
+.task-container {
+  @include Mixin.styleTaskContainer;
+}
+
+.column-header {
+  @include Mixin.styleColumnHeader;
+}
+
+.add-task-btn {
+  @include Mixin.styleAddButton;
+}
+
+#todo-tasks {
+  //border: 1px dotted black;
+  width: 20rem;
+  height: 35rem;
+  z-index: -1;
+}
+#inprogress-tasks {
+  //border: 1px dotted black;
+  width: 20rem;
+  height: 35rem;
+  margin-top: 1rem;
+  margin-left: 27.5rem;
+  z-index: -1;
+}
+#finished-tasks {
+  //border: 1px dotted black;
+  width: 20rem;
+  height: 35rem;
+  margin-left: 55rem;
+  margin-top: 0rem;
+  z-index: -1;
+}
+
+.listOfTasks {
+  list-style: none;
+}
+
+.task {
+  border: 2px solid variable.$color-quaternary;
+  margin-bottom: 2rem;
+  background-color: variable.$color-tertiary;
+  color: white;
+  font-weight: 500;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+#description {
+  display: none;
+}
+
+.task-modifiers {
+  display: flex;
+  flex-direction: column;
+  //border: 1px solid black;
+  width: 4rem;
+  margin-top: 0;
+}
+
+.icon-edit,
+.icon-delete {
+  color: variable.$color-quaternary;
+  scale: 150%;
+  //margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-top: 1.2rem;
+  //margin-top: 1rem;
+}
+
+.main-container {
+  //padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  //border: 1px solid black;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.icon-edit {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  scale: 180%;
+}
+
+.icon-delete {
+  margin-top: 1rem;
+  margin-left: -0.5rem;
+  scale: 180%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}
+
+.column1 {
+  &__tasks {
+    width: 20rem;
+    margin-left: -2rem;
+    margin-top: 1rem;
+  }
+}
+.column2 {
+  margin-left: 5rem;
+  &__tasks {
+    width: 20rem;
+    margin-left: -30rem;
+  }
+}
+
+.column3 {
+  margin-left: 8rem;
+  &__tasks {
+    width: 20rem;
+    margin-left: -57rem;
+    margin-top: 1rem;
+  }
+}
+
+.column-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.column-title {
+  text-align: center;
+}
+
+.listOfTasks {
+  border: 2px solid green;
+  padding-right: 2rem;
+  width: 12.2rem;
+}

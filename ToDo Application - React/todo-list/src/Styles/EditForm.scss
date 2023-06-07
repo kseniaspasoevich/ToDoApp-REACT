@@ -1,0 +1,36 @@
+@use "../Styles/Variables.scss" as variable;
+
+.edit-form {
+  border: 2px solid variable.$color-quaternary;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  width: 20rem;
+  background-color: variable.$color-primary;
+}
+
+input {
+  margin-bottom: 2rem;
+  height: 2rem;
+  font-weight: 700;
+  color: variable.$color-quaternary;
+  border: 2px solid variable.$color-secondary;
+  font-family: variable.$font-primary;
+}
+textarea {
+  width: 20rem;
+  height: 5rem;
+  border: 2px solid variable.$color-secondary;
+  font-family: variable.$font-primary;
+}
+button {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-left: 4rem;
+  background-color: variable.$color-quaternary;
+  color: variable.$color-primary;
+  font-weight: 600;
+  scale: 130%;
+  border: 1px solid variable.$color-primary;
+}

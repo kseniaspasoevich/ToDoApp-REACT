@@ -1,0 +1,55 @@
+@use "../Styles/Variables.scss" as variables;
+
+@mixin styleColumnTitle {
+  margin-top: 1rem;
+  border-bottom: 3px inset #a67f78;
+  font-family: variables.$font-primary;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@mixin styleColumn {
+  //border: 1px solid red;
+  width: 17rem;
+  text-align: center;
+  position: relative;
+}
+
+@mixin styleTaskContainer {
+  //border: 1px solid black;
+  height: 100%;
+  width: 15rem;
+  position: relative;
+  left: 1rem;
+}
+
+@mixin styleContent {
+  //border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: 70vh;
+  width: 85vw;
+}
+
+@mixin styleAddButton {
+  border-radius: 10%;
+  background-color: #32435f;
+  color: #e1dcd9;
+  font-family: variables.$font-primary;
+  font-weight: 500;
+  height: 3rem;
+  width: 5rem;
+  margin-top: 5rem;
+  margin-left: 0.4rem;
+}
+
+@mixin styleColumnHeader {
+  //border: 1px solid black;
+  height: 5rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
